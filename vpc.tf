@@ -1,10 +1,10 @@
-variable "region" {
-  default     = "us-east-2"
-  description = "AWS region"
+provider "aws" {
+  region = "eu-west-3"
 }
 
-provider "aws" {
-  region = "us-east-2"
+variable "region" {
+  default     = "eu-west-3"
+  description = "AWS region"
 }
 
 data "aws_availability_zones" "available" {}
